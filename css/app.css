@@ -1,0 +1,301 @@
+*,
+*::before,
+*::after {
+    --cabesera-y-pie-de-pagina: rgb(47, 47, 214);
+    --contenedor-bordes: #6565b0 ;
+    --cabesones: rgb(156, 156, 229);
+    --contenedor-formulario: rgb(57, 147, 225);
+    --boton-enviar: rgb(58, 58, 99);
+    --boton-limpiar: rgb(90, 90, 96);
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fffee6;
+}
+.cabecera,
+.footer {
+   background-color:var(--cabesera-y-pie-de-pagina);
+   text-align: center;
+   padding: 1em 0;
+}
+.titulo_pie_de_pagina {
+    font-size: 40px;
+    font-weight: bold;
+    font-style: normal;
+    color: #ffffff;
+}
+.contenedor {
+  display: flex;
+  padding: 2em;
+  justify-content: center;
+  align-items: flex-start;
+}
+.productos,
+.contenedor_formulario {
+    padding: 2em;
+    box-sizing: border-box;
+    margin-top: 30px;
+}
+.productos {
+    width: 50%;
+    background-color: transparent;
+    margin-right: 8%;
+}
+.nombre {
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: black;
+}
+.contenedor-producto {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+    width: 100%;
+    max-height: 80vh;
+    padding: 15px;
+    background-color: aqua;
+    box-shadow: -12px 10px 5.8px rgb(62, 90, 114);
+    border: 3px solid var(--contenedor-bordes);
+    overflow-y: auto;
+}
+.cabesones {
+    background-color: var(--cabesones);
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 30%;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.cabesones_imagen {
+    width: 100%;
+    height: auto;
+    flex: 1;
+}
+.cabesones_nombre,
+.cabesones_precio {
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 5px;
+    color: #ffffff;
+    line-height: 1.5;
+}
+.icono_borrar {
+    background-color: transparent;
+    border: none;
+}
+.icono_basurero {
+    margin-top: auto;
+    cursor: pointer;
+}
+.icono_basurero img {
+    width: 24px;
+    height: 24px;
+}
+.contenedor_formulario {
+    width: 30%;
+    background-color: var(--contenedor-formulario);
+    align-self: flex-start;
+}
+.titulo_formulario {
+    font-size: 25px;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.input-producto::placeholder {
+    font-size: 15px;
+    margin-bottom: 0.5em;
+}
+.input-producto {
+    width: 100%;
+    height: 40px;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    margin-top: 10px;
+}
+.formulario_botones {
+    display: flex;
+    height: auto;
+    gap: 1em;
+    margin-top: 15px;
+    justify-content: center;
+    align-items: center;
+}
+.boton_enviar,
+.boton_limpiar {
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.5s ease-out;
+}
+.boton_enviar {
+    background-color: var(--boton-enviar);
+    color: #ffffff;
+    font-weight: bold;
+}
+.boton_enviar :hover {
+    transform: scale(1.1);
+}
+.boton_limpiar {
+    background-color: var(--boton-limpiar);
+    color: #ffffff;
+    font-weight: bold;
+}
+.boton_limpiar :hover {
+    transform: scale(1.1);
+}
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 1em 0;
+    margin-bottom: 20px;
+}
+.logo_contenedor {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+.redes-sociales-logo {
+    width: 40px;
+    height: 40px;
+}
+.copyright {
+    font-size: 15px;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+@media (max-width:700px ) {
+    .cabecera,
+    .footer {
+        width: auto;
+        height: auto;
+        flex-wrap: wrap;
+    }
+    .contenedor {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .productos,
+    .contenedor_formulario {
+        margin-right: auto;
+        margin-left: auto;
+        flex-wrap: wrap;
+        flex: 1;
+    }
+    .productos,
+    .contenedor_formulario {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    .formulario_botones {
+        justify-content: center;
+        align-items: center;
+        margin-right: 0;
+    }
+    .contenedor-producto {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .cabesones_nombre,
+    .cabesones_precio,
+    .icono_basurero {
+        width: 80%;
+        text-align: center;
+        justify-content: center;
+        align-self: center;
+    }
+    .icono_basurero {
+        justify-content: center;
+        align-self: center;
+    }
+    .cabesones {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 1240px) {
+    .cabecera,
+    .footer {
+        width: auto;
+        height: auto;
+        flex-wrap: wrap;
+    }
+    .contenedor {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .productos,
+    .contenedor_formulario {
+        margin-right: auto;
+        margin-left: auto;
+        flex-wrap: wrap;
+        flex: none;
+    }
+    .contenedor_formulario {
+        margin-bottom: 20px;
+        width: 90%;
+    }
+    .formulario_botones {
+        justify-content: center;
+        align-items: center;
+        margin-right: 0;
+    }
+    .contenedor-producto {
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+    }
+    .cabesones_nombre,
+    .cabesones_precio,
+    .icono_basurero {
+        width: 80%;
+        text-align: center;
+        justify-content: center;
+        align-self: center;
+    }
+    .icono_basurero {
+        justify-content: center;
+        align-self: center;
+    }
+    .cabesones {
+        flex-wrap: wrap;
+    }
+    .cabesones_imagen img {
+        flex: 1;
+    }
+}

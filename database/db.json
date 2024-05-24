@@ -1,0 +1,64 @@
+{
+    "products": [
+        {
+            "nombre": "bane",
+            "precio": "60",
+            "imagen": "../imagenes/bane.jpg",
+            "id": "1"
+        },
+        {
+            "nombre": "beast boy",
+            "precio": "60",
+            "imagen": "../imagenes/beast.png",
+            "id": "2"
+        },
+        {
+            "nombre": "captain-america",
+            "precio": "60",
+            "imagen": "../imagenes/captain-america.jpg",
+            "id": "3"
+        },
+        {
+            "nombre": "mr increible",
+            "precio": "60",
+            "imagen": "../imagenes/mr increible.jpg",
+            "id": "4"
+        },
+        {
+            "nombre": "predator",
+            "precio": "60",
+            "imagen": "../imagenes/predator.jpg",
+            "id": "5"
+        },
+        {
+            "nombre": "robocop",
+            "precio": "60",
+            "imagen": "../imagenes/robocop.jpg",
+            "id": "6"
+        },
+        {
+            "nombre": "sindrome",
+            "precio": "60",
+            "imagen": "../imagenes/sindrome.jpg",
+            "id": "7"
+        },
+        {
+            "nombre": "skeletor",
+            "precio": "60",
+            "imagen": "../imagenes/skeletor.jpg",
+            "id": "8"
+        },
+        {
+            "nombre": "spider-man",
+            "precio": "60",
+            "imagen": "../imagenes/spider-man.jpg",
+            "id": "9"
+        },
+        {
+            "nombre": "sub-zero",
+            "precio": "60",
+            "imagen": "../imagenes/sub-zero.jpg",
+            "id": "10"
+        }
+    ]
+}
